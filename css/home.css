@@ -1,0 +1,615 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* font-family: cursive; */
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.header{
+    padding-top: 35px;
+    padding-bottom: 15px;
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.header .headerleft{
+    float: left;
+    margin-top: -8px;
+}
+.header  img{
+    /* float: left; */
+    width: 5%;
+    margin-top: -6px;
+    margin-right: 7px;
+   
+}
+.header .logo{
+
+text-transform: uppercase;
+font-size: 27px;
+font-family: 'Dancing Script', cursive;
+display: inline;
+}
+.header .menu{
+    margin-top: -6px;
+    
+}
+
+.header .menu a{
+    padding-right: 15px;
+    padding-left: 22px;
+    font-size: 19px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header  a{
+  color:black
+}
+.header  a:hover{
+    color:gold
+  }
+
+  .header .toggle{
+    display: none;
+    float: right;
+    font-size: 22px;
+    margin-top: -38px;
+    cursor: pointer;
+  }
+
+  /* *****************responsive for header************** */
+  @media(min-width:769px){
+    .header .toggle{
+        margin-top: -3px;
+      }
+  }
+  @media(max-width:1200px){
+      .header {
+          text-align: center;
+      }
+    .header .toggle{
+       display: block;
+      }
+      .header .menu {
+        text-align: center;
+        padding-top: 15px;
+      }
+      .header .headerleft {
+        float: none;
+      
+    }
+    .header {
+        padding-top: 22px;
+    }
+    
+      
+  }
+
+/* *****************next tour**************** */
+.next-tour{
+    /* background: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)),url(../images/journez-gallery-5.jpg) no-repeat top center fixed; */
+    background-size: cover;
+    animation: swing 15s  infinite ;
+    padding: 153px 10px;
+    background-attachment: fixed;
+    background-position: top center;
+}
+
+@keyframes swing{
+    0%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))  , url('../images/plane.jpg')  ;
+         animation-delay: .5s;
+         animation-timing-function: cubic-bezier(0.7,0.7,0.7,0.7);
+        
+     }
+     25%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))  ,url('../images/trip.jpg')  ;
+       
+        animation-delay: .10s;
+        animation-timing-function: cubic-bezier(0.7,0.7,0.7,0.7);
+        
+     }
+      50%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))  ,  url('../images/journez-gallery-1.jpg') ;
+        animation-delay: .15s;
+        animation-timing-function: cubic-bezier(0.7,0.7,0.7,0.7);
+       
+      }
+      75%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))  , url('../images/it.jpg') ;
+        animation-delay: .20s;
+        animation-timing-function: cubic-bezier(0.7,0.7,0.7,0.7);
+       
+      }
+      100%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))  ,  url('../images/pyramids.jpg') ;
+        animation-delay: .25s;
+        animation-timing-function: cubic-bezier(0.7,0.7,0.7,0.7);
+        
+      }
+  }
+.next-tour button{
+    
+    background: none;
+    color: white;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 6px 40px;
+    font-family: cursive;
+    transition: all 0.3s ease-in-out;
+}
+.next-tour button:hover{
+    background-color: gold;
+    border: 1px solid gold;
+}
+.next-tour h2{
+    font-family: var(--heading-font);
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size:75px;
+}
+.next-tour  h2 span{
+    color: gold;
+    font-family: 'Dancing Script', cursive;
+    line-height: 1em;
+    display: inline-block;
+}
+.next-tour form{
+    background-color: white;
+}
+.next-tour .search-form-inner{
+    display: flex;
+}
+.next-tour .inputs{
+    display: flex;
+    font-family: cursive;
+}
+.next-tour .part-of-search{
+    padding: 46px 22px;
+}
+.next-tour p{
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.next-tour input{
+    outline: none;
+    border: none;
+    background: none;
+    color: #6c757dbf;
+}
+.next-tour .search-button{
+    padding: 60px 0;
+    background: gold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+}
+.next-tour .search-button:hover{
+   
+    background:#40B9EB;
+}
+.next-tour input[type='submit']{
+    transition: all 0.3s ease-in-out;
+}
+.next-tour input[type='submit']:hover{
+    color: white;
+}
+.next-tour  label{
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--thm-black);
+    font-weight: 600;
+    font-size: 14px;
+    /* letter-spacing: .2em; */
+    line-height: 2em;
+}
+
+/************** responsive************ */
+@media (max-width:500px){
+   .col-xs-12{
+    flex: 0 0 100%;
+    max-width:100%;
+  }
+}
+
+/* ***************tours**************** */
+.tours{
+    margin-top: 71px;
+}
+.tours a{
+    text-decoration: none;
+}
+.tours h2{
+    color: #FFA801;
+  
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.tours h3{
+    color: #082740;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 53px;
+}
+.tours .one-trip{
+    position: relative;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+    
+}
+.tours .one-trip:hover{
+    box-shadow: -1px 9px 20px #6c757d38;
+    /* 0px 5px 20px 0px #6c757d38 */
+}
+.tours .one-trip .one-trip-img{
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+.tours .one-trip img{
+    width: 100%;
+    height: 292px;
+    transition: all 0.5s ease-in-out;
+}
+.tours .one-trip img:hover{
+    transform: scale(1.1);
+}
+.tours .one-trip .one-trip-content{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(236,238,239);
+    background-color: rgb(255,255,255);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    transition: all 500ms ease;
+}
+.tours .one-trip h4{
+    margin: 0;
+   
+    font-weight: 600;
+    line-height: 34px;
+    font-size: 20px;
+}
+.tours .one-trip h4 a{
+    color: #343a40c9;
+}
+.tours .one-trip p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9ca3a9;
+    line-height: 1em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.tours .one-trip span{
+    color: red;
+    font-size: 22px;
+    font-weight: 600;
+}
+.tours .one-trip h4 a{
+    transition: all 0.3s ease-in-out;
+}
+.tours .one-trip h4 a:hover{
+    color:#40B9EB
+}
+.tours .one-trip .one-trip-data{
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+.tours .one-trip .one-trip-data li{
+    padding-right: 23px;
+}
+.tours .one-trip .one-trip-data a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #9ca3a9;
+    
+}
+.tours .one-trip label{
+    cursor: pointer;
+}
+.tours .dropdown-divider{
+    margin: 1rem 0px;
+}
+.tours .one-trip a svg:hover{
+   color:#40B9EB
+}
+.tours .one-trip a label:hover{
+    color:black
+ }
+
+ /* ***************video************** */
+ .video{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.8)),url(../images/back.jpg) no-repeat top center fixed;
+    background-size: cover;
+    padding: 60px;
+    
+    margin-top: 69px;
+
+    text-align: center;
+ }
+ .video a{
+    border: 1px solid #ffffff91;
+    padding: 34px 26px;
+ }
+ .video a label{
+    color: black;
+    background-color: var(--warning);
+    /* padding: 0px 10px; */
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 31px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+ }
+ .video a label:hover{
+     background:white;
+     color:var(--warning);
+ }
+ .video h2{
+    color: #FF0143;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 53px;
+}
+ 
+ .video h3{
+    color: #FFF;
+    font-family: cursive;
+    font-size: 47px;
+    font-weight: 400;
+    margin-top: 36px;
+
+ }
+
+ /* *****************road*************** */
+ .road .leftroad{
+    /* background-color: #eceeef; */
+    padding-top: 143px;
+    /* padding-left: 50px; */
+    position: relative;
+ }
+ .road .leftroad p{
+    color: #FFA801;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-family: 'Patrick Hand', cursive;
+ }
+ .road .leftroad h2{
+    
+    font-size: 35px;
+    font-weight: 900;
+    color: #343a40f7; 
+ }
+ .road .leftroad span{
+    color: #40B9EB;
+   font-family: 'Teko', sans-serif;
+   font-size: 57px;
+    font-weight: 400;
+    line-height: 1.4em;
+ }
+ .road .road-img img{
+    width: 73%;
+    margin-top: 40px;
+    height: 266px;
+ }
+ .road .best-one{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    background-color: #FF0143;
+    padding: 33px 22px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+
+ }
+.road .rightroad img{
+    width: 100%;
+    padding-top: 143px;
+}
+/* *********************responsive************* */
+@media(max-width:767px){
+    .road .rightroad img {
+      
+        padding-top: 29px;
+    }
+}
+/* **************************top-destinations&***************** */
+.top-destinations{
+    margin-top: 90px;
+}
+.top-destinations .container{
+    margin-top: 69px;
+}
+.top-destinations a{
+    text-decoration: none;
+}
+.top-destinations h3{
+    text-align: center;
+    color: #FFA801;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 2px
+}
+.top-destinations h2{
+    color: #082740;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+.top-destinations .destination{
+    position: relative;
+    margin-bottom: 30px;
+}
+.top-destinations img{
+    border-radius: 50%;
+    /* width: 275px;
+    height: 281px; */
+    width: 249px;
+    height: 243px;
+    transition: all 0.5s ease-in-out;
+  
+}
+/* .top-destinations .con-img{
+    overflow: hidden;
+} */
+
+.top-destinations .yellow{
+    opacity: 0;
+    background: var(--warning);
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+   
+    position: absolute;
+    width: 249px;
+    height: 243px;
+    top: 0; 
+    
+}
+.top-destinations .destination:hover .yellow{
+    opacity: 1;
+}
+.top-destinations p{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+    font-family: cursive;
+    color:white;
+    cursor: pointer;
+    /* margin: 0; */
+    /* position: absolute;
+    transform: translate(42%, -234%); */
+
+}
+.top-destinations p a{
+    color:white;
+}
+
+/* responsive */
+@media(max-width:500px){
+    .top-destinations .destination{
+      text-align: center;
+        
+    }
+
+   
+}
+
+/* *******numbers**************** */
+.numbers{
+    background-color: #40B9EB;
+    color: white;
+    padding: 70px 0px;
+    margin-top: 50px;
+}
+.numbers h3 {
+    font-size: 45px;
+}
+.numbers p{
+    font-weight: 900;
+}
+.numbers .num-one{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+@media(max-width:763px){
+    .numbers .col-xs-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    
+    }
+}
+
+
+/* ********************discovers*************** */
+.discover{
+    position: fixed;
+    background: rgba(255, 255, 255, 1);
+    width:100%;
+    height: 0%;
+    overflow: auto;
+    top:0;
+    left: 0;
+    z-index: 6;
+    transition: all 0.5s ease-in-out;
+}
+.discover .close{
+    color: var(--text-secondary);
+margin-right: 46px;
+margin-top: 30px;
+cursor: pointer
+}
+
+.discover .content-discover{
+    margin: 90px 0;
+  
+}
+.discover .title{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: cursive;
+    color: var(--yellow);
+}
+.discover .speech{
+    font-size: 18px;
+    font-size: 18px;
+    padding-bottom: 27px;
+}
+.discover img{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 17px;
+}
+
+
+/* ********************footer*********** */
+
+footer{
+    padding-top: 28.5px;
+    padding-bottom: 16.5px;
+    background-color: #eceeef;
+}
+
+footer a{
+  
+ color: var(--gray);
+
+    border-radius: 50%;
+   
+    padding: 8px 14px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+footer a:hover{
+    color:white;
+    background-color: #40b9eb;
+}
